@@ -1,0 +1,32 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.main-header__link {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  color: $primary;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+
+  &--logo {
+    font-weight: 700;
+  }
+
+  &:hover {
+    color: $hover;
+    border-bottom: 1px solid $hover;
+    padding-bottom: 9px;
+  }
+}
+
+.main-header__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
