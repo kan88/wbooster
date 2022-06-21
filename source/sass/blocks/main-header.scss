@@ -2,13 +2,14 @@
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
+  margin-bottom: 50px;
 }
 
 .main-header__link {
   display: block;
   font-size: 18px;
   text-decoration: none;
-  color: $primary;
+  color: $skills;
   padding: 10px 10px;
   text-transform: uppercase;
   cursor: pointer;
@@ -16,6 +17,7 @@
 
   &--logo {
     font-weight: 700;
+    font-size: 22px;
   }
 
   &:hover {

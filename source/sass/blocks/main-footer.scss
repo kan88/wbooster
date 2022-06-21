@@ -1,0 +1,15 @@
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.main-footer__link {
+  font-size: 18px;
+  color: $skills;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover;
+  }
+}

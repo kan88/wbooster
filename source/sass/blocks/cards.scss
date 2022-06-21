@@ -2,6 +2,7 @@
   display: flex;
   list-style-type: none;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -9,9 +10,13 @@
   width: 200px;
   height: 220px;
 }
+
 .cards__headline {
   font-size: 24px;
   text-align: left;
+  margin: 0;
+  margin-bottom: 40px;
+  border-bottom: 2px solid $primary;
 }
 
 .cards__item {
@@ -20,7 +25,15 @@
   flex-direction: column;
   width: 200px;
   border: 1px solid $primary;
-  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 9px $hover;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .cards__title {
@@ -56,4 +69,20 @@
   border: 2px solid $skills;
   width: 100px;
   border-radius: 20px;
+}
+
+.cards__button {
+  padding: 10px 10px;
+  width: 250px;
+  background-color: $skills;
+  color: $secondary;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover;
+  }
 }

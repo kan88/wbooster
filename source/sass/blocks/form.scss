@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+.form__fieldset {
+  margin-bottom: 10px;
+}
+
 .form__list {
   display: flex;
   justify-content: center;
@@ -38,7 +42,7 @@
   display: block;
   width: 80px;
   height: 50px;
-  border: 2px solid $primary;
+  border: 2px solid $skills;
   cursor: pointer;
 }
 
@@ -62,4 +66,24 @@
   padding-top: 18px;
   padding-bottom: 18px;
   font-weight: 400;
+}
+
+.form__input-text {
+  margin-bottom: 10px;
+}
+
+.form__button {
+  padding: 10px 10px;
+  width: 250px;
+  background-color: $skills;
+  color: $secondary;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover;
+  }
 }
